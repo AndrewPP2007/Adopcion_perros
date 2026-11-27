@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopción de Perros — Proyecto Git y GitHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Portal de Adopción de Perros</h1>
+    <p>Registro de perros disponibles y solicitudes de adopción.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="sec-registro">
+      <h2 id="sec-registro">Registrar perro</h2>
+      <form id="form-perro">
+        <label for="nombre-perro">Nombre del perro</label>
+        <input id="nombre-perro" name="nombre" type="text" required>
+
+        <label for="edad-perro">Edad aproximada</label>
+        <input id="edad-perro" name="edad" type="text" placeholder="Ej. 2 años" required>
+
+        <label for="tamano-perro">Tamaño</label>
+        <select id="tamano-perro" name="tamano" required>
+          <option value="Pequeño">Pequeño</option>
+          <option value="Mediano">Mediano</option>
+          <option value="Grande">Grande</option>
+        </select>
+
+        <button type="submit">Agregar perro</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="sec-catalogo">
+      <h2 id="sec-catalogo">Perros disponibles</h2>
+      <ul id="lista-perros"></ul>
+    </section>
+
+    <section aria-labelledby="sec-adopcion">
+      <h2 id="sec-adopcion">Solicitar adopción</h2>
+      <form id="form-adopcion">
+        <label for="select-perro">Selecciona un perro</label>
+        <select id="select-perro" name="perro" required></select>
+
+        <label for="nombre-adoptante">Tu nombre completo</label>
+        <input id="nombre-adoptante" name="adoptante" type="text" required>
+
+        <label for="correo-adoptante">Correo o teléfono</label>
+        <input id="correo-adoptante" name="contacto" type="text" required>
+
+        <button type="submit">Enviar solicitud</button>
+      </form>
+      <p id="mensaje-estado" role="status"></p>
+      <ul id="lista-solicitudes"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto académico de Adopción de Perros — Control de versiones con Git y GitHub.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
