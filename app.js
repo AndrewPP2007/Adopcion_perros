@@ -69,3 +69,5 @@ formAdopcion.addEventListener("submit", (evento) => {
 renderizarPerros();
 renderizarSolicitudes();
 // Mejora de trazabilidad en consola para registro de perros
+
+// Mejora de trazabilidad en consola para registro de perros
