@@ -71,3 +71,6 @@ renderizarSolicitudes();
 // Mejora de trazabilidad en consola para registro de perros
 
 // Mejora de trazabilidad en consola para registro de perros
+
+console.log('Total de perros disponibles:', perros.length);
+console.log('Total de solicitudes:', solicitudes.length);
