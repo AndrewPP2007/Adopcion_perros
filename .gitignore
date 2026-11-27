@@ -1,0 +1,6 @@
+# Carpetas y archivos temporales
+temp/
+*.log
+
+# Variables o configuraciones locales privadas
+.env.local
